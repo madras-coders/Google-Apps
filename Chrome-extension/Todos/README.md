@@ -5,7 +5,7 @@ We provide two options to take notes
 1. Highlight the text in any webpage in any language and enter the shortcut keys or click on the toolbar extension icon to save the text to notes. 
 2. Open a new tab and enter your notes manually. 
 
-We provide two biggest advantages using this product. 1. With the option to select and save to notes, we make the notes taking very flexible and no need to toggle between multiple applications to take notes. 2. New tab displaying the notes will help users to remember the notes and to do tasks. 
+Two biggest advantages using this product. 1. With the option to select and save to notes, we make the notes taking very flexible and no need to toggle between multiple applications to take notes. 2. New tab displaying the notes will help users to remember the notes and to do tasks. 
 
 Short cut keys to take notes are,
 

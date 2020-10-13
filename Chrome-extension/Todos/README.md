@@ -19,6 +19,7 @@ This is truly an open source application built to enhance the productivity. Your
 
 Product Features Roadmap:
 
-1. Adding tags/labels to the notes - November, 2020
-2. A countdown timer - November, 2020
-3. Reminders and alarm for the notes - January 2021
+1. Sub tasks creation - November, 2020
+2. Adding tags/labels to the notes - December, 2020
+3. A countdown timer - December, 2020
+4. Reminders and alarm for the notes - January 2021

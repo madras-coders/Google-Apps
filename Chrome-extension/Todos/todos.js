@@ -1,13 +1,17 @@
 /**
  * todos chrome extension
  *
- * Note taking application. Simple to use and it uses new Tab to display the notes
+ * A simple Note taking application. Replaces the new tab to display the notes.
  * Highlight the text and save to notes. 
+ * 
+ * Default short cut keys. Mac -> CMD + E. Windows -> Ctrl + E.
+ * 
  * Multi language support.
+ * 
  * Sync notes between multiple devices using same chrome login.
  *
+ * author: Saravana Mahesh Thangavelu
  * 
- * author: Saravana Mahesh
  * year: 2020
  */
 
@@ -33,8 +37,8 @@ window.onload = function() {
 		notes = [];
 		document.getElementById('data').innerHTML = '';
 
-		chrome.storage.sync.get('notes', function(result) {
-			notes = result.notes;
+		chrome.storage.sync.get('todos_notes', function(result) {
+			notes = result.todos_notes;
 			if (!notes) {
 				notes = [''];
 			}
@@ -118,11 +122,11 @@ window.onload = function() {
 	function onblur(e) {
 		if (e.target.innerText) {
 			notes = data.innerText.split('\n');
-			chrome.storage.sync.set({ notes: notes });
+			chrome.storage.sync.set({ todos_notes: notes });
 		} else {
 			// remove if there are any empty note lines.
 			notes = data.innerText.replace(/(^[ \t]*\n)/gm, '').split('\n');
-			chrome.storage.sync.set({ notes: notes }, function() {
+			chrome.storage.sync.set({ todos_notes: notes }, function() {
 				loadNotes();
 			});
 		}
@@ -140,7 +144,7 @@ window.onload = function() {
 			// do not delete the entire data element accidentally due to html image glitches.
 			document.getElementById(div_id).remove();
 			notes = data.innerText.split('\n');
-			chrome.storage.sync.set({ notes: notes });
+			chrome.storage.sync.set({ todos_notes: notes });
 			loadNotes();
 		}
 	}

@@ -10,7 +10,7 @@ html {
 
 .input {
 	font-family: 'Lato', sans-serif;
-	font-weight: 100;
+	font-weight: 60;
 	outline: none;
 	color: #fff;
 	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
@@ -21,7 +21,31 @@ html {
 }
 
 .input .note {
+	margin-left: 40px;
+	outline: none;
+	spellcheck: false;
+	autocorrect: "off";
+}
+
+.input .note1 {
 	margin-left: 70px;
+	margin-top: 50px;
+	outline: none;
+	spellcheck: false;
+	autocorrect: "off";
+}
+
+.input .note2 {
+	margin-left: 160px;
+	margin-top: 10px;
+	outline: none;
+	spellcheck: false;
+	autocorrect: "off";
+}
+
+.input .note3 {
+	margin-left: 250px;
+	margin-top: 10px;
 	outline: none;
 	spellcheck: false;
 	autocorrect: "off";

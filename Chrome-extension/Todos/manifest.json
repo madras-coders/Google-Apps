@@ -1,6 +1,6 @@
 {
 	"name": "Todos - Highlight text to Note",
-	"version": "0.0.3",
+	"version": "0.0.6",
 	"description": "Simple note taking application from any webpage !!!",
 	"manifest_version": 2,
 	"permissions": [ "storage" ],
@@ -23,7 +23,7 @@
 	"commands": {
 		"_execute_browser_action": {
 			"suggested_key": {
-				"default": "Ctrl+E",
+				"default": "Ctrl+Q",
 				"mac": "Ctrl+E"
 			},
 			"description": "Save Notes"

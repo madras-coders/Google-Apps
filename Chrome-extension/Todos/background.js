@@ -4,9 +4,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	text_selected = request.text_selected;
 });
 
-chrome.runtime.onInstalled.addListener(function() {
-	let welcome_note = ['Thank you for choosing Todos notes !!! '];
-	chrome.storage.sync.set({ todos_notes: welcome_note });
+chrome.runtime.onInstalled.addListener(function(details) {
+  if(details.reason == 'install'){
+    let welcome_note = ['Thank you for choosing Todos notes !!! '];
+	  chrome.storage.sync.set({ todos_notes: welcome_note });
+  }
 });
 
 chrome.browserAction.onClicked.addListener(function(tab) {
